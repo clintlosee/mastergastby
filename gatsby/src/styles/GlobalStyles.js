@@ -1,11 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
+// import { createGlobalStyle } from 'styled-components';
+import * as styled from 'styled-components';
 import bg from '../assets/images/bg.svg';
 import stripes from '../assets/images/stripes.svg';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = styled.createGlobalStyle`
   :root {
-    --red: #FF4949;
-    --black: #2E2E2E;
+    --red: #ff4949;
+    --black: #2e2e2e;
     --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
@@ -23,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   fieldset {
-    border-color: rgba(0,0,0,0.1);
+    border-color: rgba(0, 0, 0, 0.1);
     border-width: 1px;
   }
 
@@ -36,14 +37,14 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     --cast: 2px;
     box-shadow: var(--cast) var(--cast) 0 var(--grey);
-    text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.2);
+    text-shadow: 0.5px 0.5px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.2s;
     &:hover {
       --cast: 4px;
     }
   }
 
-  .gatsby-image-wrapper img[src*=base64\\,] {
+  .gatsby-image-wrapper img[src*='base64\\,'] {
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
   }
@@ -60,7 +61,7 @@ const GlobalStyles = createGlobalStyle`
     background: var(--white);
   }
   body::-webkit-scrollbar-thumb {
-    background-color: var(--red) ;
+    background-color: var(--red);
     border-radius: 6px;
     border: 3px solid var(--white);
   }
@@ -81,7 +82,6 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     display: inline-block;
   }
-
 `;
 
 export default GlobalStyles;
