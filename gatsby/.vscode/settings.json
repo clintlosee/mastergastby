@@ -24,4 +24,7 @@
     "javascript",
     "javascriptreact"
   ],
+  "cSpell.ignoreWords": [
+    "slicemasters"
+  ],
 }
