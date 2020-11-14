@@ -22,4 +22,8 @@ export default {
       },
     },
   ],
+  proxy: {
+    prefix: '/api',
+    url: 'http://localhost:8888',
+  },
 };
