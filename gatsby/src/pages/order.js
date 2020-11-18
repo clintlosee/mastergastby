@@ -9,7 +9,7 @@ import OrderStyles from '../styles/OrderStyles';
 import MenuItemStyles from '../styles/MenuItemStyles';
 import usePizza from '../utils/usePizza';
 import PizzaOrder from '../components/PizzaOrder';
-import calculateOrderTotal from '../utils/caclulateOrderTotal';
+import calculateOrderTotal from '../utils/calculateOrderTotal';
 
 export default function OrderPage({ data }) {
   const { values, updateValue } = useForm({

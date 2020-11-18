@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 
 import OrderContext from '../components/OrderContext';
 import attachNamesAndPrices from './attachNamesAndPrices';
-import calculateOrderTotal from './caclulateOrderTotal';
+import calculateOrderTotal from './calculateOrderTotal';
 import formatMoney from './formatMoney';
 
 export default function usePizza({ pizzas, values }) {
