@@ -21,7 +21,6 @@ export default function useLatestData() {
 
   // Use a side effect to fetch the data from the graphql endpoint
   useEffect(function () {
-    console.log('FETCHING DATA');
     // when the component loads, fetch the data
     fetch(process.env.GATSBY_GRAPHQL_ENDPOINT, {
       method: 'POST',
